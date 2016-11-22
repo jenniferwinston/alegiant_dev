@@ -1,0 +1,398 @@
+.center{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*===Header styles===*/
+
+#headerContainer{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#headerNav{
+	background-color: #f9f9f9;
+	height: 96px;
+	width: 100%
+}
+
+/*===Nav Menu Header styles===*/
+
+#logo{
+	float: left;
+	width: 227px;
+	height: 96px;
+}
+
+#logo img{
+	height: 96px;
+	width: 227px;
+}
+
+#mainNavMenu{
+	list-style: none;
+	float: left;
+	margin-left: 40px;
+	padding-left: 0px;
+	padding-top: 36px;
+}
+
+#mainNavMenu li a{
+	text-decoration: none;
+}
+
+#mainNavMenu li{
+	float: left;
+	padding: 7px 22px;
+	color: #1c5071;
+}
+
+#mainNavMenu li:hover{
+	border-radius: 7px 7px 7px 7px;
+	background-color: #e3e4e6;
+}
+
+.menuItem{
+	text-align: center;
+	font-style: normal;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #257;
+	text-decoration: none;
+}
+
+#socialMedia{
+	float: right;
+	padding-top: 46px;
+	list-style: none;
+}
+
+#socialMedia>li{
+	float: left;
+	width: 20px;
+	height: 18px;
+}
+
+#infoNav{
+	position: absolute;
+	right: 0;
+	width: 100%;
+	z-index: 500px;
+	font-weight: 400;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+}
+
+#infoNav ul{
+	position: relative;
+	display: block;
+	text-align: right;
+	list-style: none;
+}
+
+#infoNav ul>li {
+	font-size: 12px;
+	position: relative;
+	display: inline-block;
+	padding-left: 15px;
+}
+
+#infoNav ul>li a{
+	text-decoration: none;
+}
+
+/*===Search Form Header styles===*/
+
+#searchFormHeader{
+	background-color: #e3e4e6;
+	height: 76px;
+	padding: 0px;
+	border-radius: 0px;
+}
+
+#searchFormHeader h3{
+	height: 46px;
+	line-height: 36px;
+	float: left;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #646667;
+	padding-left: 40px;	
+}
+
+#searchFormWrap{
+	padding-left: 32px;
+	padding-top: 20px;
+	float: left;
+}
+
+.form-input{
+	float: left;
+	width: 235px;
+	height: 37px;
+	margin-right: 22px;
+}
+
+.form-input input[type=text]{
+	border-radius: 10px 10px 10px 10px;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	color: #666666;
+	margin-left: 5px;
+}
+
+#findButton{
+	border: none;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-size: 17px;
+	color: white;
+	background-color: #3d758d;
+	width: 82px;
+	height: 37px;
+	cursor: pointer;
+	border-radius: 7px 7px 7px 7px;
+}
+
+/*===Content styles===*/
+
+#content{
+	width: 100%;
+}
+
+.titleBanner{
+	height: 68px;
+	width: 544px;
+	padding-top: 32px;
+	margin-bottom: 62px;
+}
+
+.slant1{
+	top: 42px;
+	position: absolute;
+	z-index: +2;
+	float: left;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 58px 43px 0 0;
+	border-color: #3293b6 transparent transparent transparent;
+}
+
+.slant2{
+	float: left;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 68px 50px;
+	border-color: transparent transparent #63b4d1 transparent;
+}
+
+.banner{
+	float: left;
+	width: 444px;
+	height: 68px;
+	background-color: #63b3d1;
+}
+
+.banner h1{
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 25px;
+}
+
+
+.slant3{
+	float: left;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 68px 50px 0 0;
+	border-color: #63b4d1 transparent transparent transparent;
+}
+
+#backBtn {
+	padding-left: 30px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	color: #666666;
+	padding-bottom: 22px;
+	text-decoration: none;
+}
+
+#jobPostWrap{
+	border-top: solid 1px #ecedef;
+	padding-top: 56px;
+	padding-left: 58px;
+	/*padding-bottom: 26px;*/
+	padding-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 56px;
+}
+
+#jobTitle{
+	text-decoration: none;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	color: #666666;
+	margin-bottom: 7px;	
+}
+
+#jobPost{
+	line-height: 2.7em;
+	float: left;
+}
+
+#jobPost ul {
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;	
+}
+
+#listedJobInfo{
+	/*list-style: none outside;*/
+	padding: 0;
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+#listedJobInfo li{
+	margin: 0 1.95em 0 0;
+	padding: .5em;
+	float: left;
+	line-height: 1em;
+}
+
+#employmentType{
+	color: white;
+	background-color: #f08d3c;
+}
+
+#location{
+	color: #999;
+}
+
+#location a{
+	text-decoration: none;
+}
+
+#location i{
+	color: #999;
+	margin-right: 4px;
+}
+
+#postDate{
+	color: #999;
+}
+
+#postDate i{
+	margin-right: 4px;
+}
+
+#jobDescription{
+	margin: 0 0 1.5em;
+	border-bottom: solid 1px #ecedef;
+}
+
+#jobDescription h2{
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;	
+	color: #2f9ccf;
+	margin-bottom: 15px;	
+}
+
+#jobDescription p{
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;	
+	color: #666666;
+	margin-bottom: 20px;	
+}
+
+
+
+/*===Footer Styles===*/
+
+#footer{
+	margin-top: 150px;
+	width: 100%;
+	height: 126px;
+}
+
+/*===Footer Top styles===*/
+
+#footerTop{
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 74px;
+}
+
+#footerLogo{
+	float: left;
+	width: 141px;
+	height: 60px;
+}
+
+#footerLogo img{
+	width: 141px;
+	height: 60px;
+	margin-top: 8px;
+}
+
+#footerNavMenu{
+	float: left;
+	padding-top: 26px;
+	padding-left: 58px;
+	list-style: none;
+}
+
+#footerNavMenu>li:first-child {
+	border-left: none;
+}
+
+#footerNavMenu>li{
+	float: left;
+	padding: 0 22px;
+	border-left: solid 1px #63b3d1;
+}
+
+/*===Footer Bottom styles===*/
+
+#footerBottom{
+	background-color: #eeeeee;
+	width: 100%;
+	height: 53px;
+}
+
+#footerCopyright{
+	text-align: center;
+	padding-top: 17px;
+	color: #686868;
+	font-size: 13px;
+	font-style: normal;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-weight: 400;
+}
