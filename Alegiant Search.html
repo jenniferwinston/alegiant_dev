@@ -5,83 +5,303 @@
     <title>Alegiant - Search</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
-  	<link rel="stylesheet" type="text/css" href="styles.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 </head>
 
 <body>
 
-<div id="headerContainer" class="container-fluid">
+<div id="desktop">
 
-    <div id="headerNav">
-        <div class="center">
-            <div id="infoNav">
-                <ul>
-                    <li><a href="">Call Us: 800-226-9917</a></li>
-                    <li><a href="">Resources</a></li>
-                    <li><a href="">Employee Login</a></li>
+    <div id="headerContainer" class="container-fluid">
+
+        <div id="headerNav">
+            <div class="center">
+                <div id="infoNav">
+                    <ul>
+                        <li><a href="">Call Us: 800-226-9917</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li><a href="">Employee Login</a></li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <img src="AlegiantLogo.png">
+                </div>
+                <ul id="mainNavMenu">
+                    <a href=""><li id="aboutBtn" class="menuItem">About</li></a>
+                    <a href=""><li id="jobSeekersBtn" class="menuItem">Job Seekers</li></a>
+                    <a href=""><li id="newsBtn" class="menuItem">News</li></a>
+                    <a href=""><li id="jobSearchBtn" class="menuItem">Job Search</li></a>
+                    <a href=""><li id="contactBtn" class="menuItem">Contact</li></a>
+                </ul>
+                <ul id="jobSeekDropdown">
+                    <a href=""><li id="nursingBtn" class="subMenuItem">Nursing</li></a>
+                    <a href=""><li id="alliedHealthBtn" class="subMenuItem">Allied Health</li></a>
+                    <a href=""><li id="advPracBtn" class="subMenuItem">Advanced Practice</li></a>
+                    <a href=""><li id="travelBenefitBtn" class="subMenuItem">Traveling - Benefits</li></a>
+                    <a href=""><li id="travelFaqBtn" class="subMenuItem">Traveling - FAQ</li></a>
+                </ul>
+                <ul id="socialMedia">
+                    <li class="facebook"><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li class="twitter"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-            <div id="logo">
-                <img src="AlegiantLogo.png">
+        </div>
+
+        <div id="searchFormHeader" class="jumbotron">
+            <div class="center">
+                <h3>Find Your New Job</h3>
+                <div id="searchFormWrap">
+                    <form id="searchForm">
+                        <div class="form-input">
+                            <input type="text" placeholder="Job Title" id="searchKeywords">
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="Desired Location" id="searchLocation">
+                        </div>
+                        <input type="submit" id="findButton" value="Find">
+                    </form>
+                </div>
             </div>
-            <ul id="mainNavMenu">
-                <a href=""><li id="aboutBtn" class="menuItem">About</li></a>
-                <a href=""><li id="jobSeekersBtn" class="menuItem">Job Seekers</li></a>
-                <a href=""><li id="newsBtn" class="menuItem">News</li></a>
-                <a href=""><li id="jobSearchBtn" class="menuItem">Job Search</li></a>
-                <a href=""><li id="contactBtn" class="menuItem">Contact</li></a>
-            </ul>
-            <ul id="socialMedia">
+        </div>
+
+    </div>
+
+    <div id="content">
+        <div class="center">
+
+            <div class="titleBanner">
+                <div class="slant1"></div>
+                <div class="slant2"></div>
+                <div class="banner">
+                    <h1>Jobs</h1>
+                </div>
+                <div class="slant3"></div>
+            </div>
+
+            <div id="searchDiv">
+
+                <form id="jobSearchForm">
+                    <div id="searchJobs">
+
+                        <div id="searchJobKeywords">
+                            <input type="text" placeholder="Keywords" id="keywordsText">
+                        </div>
+
+                        <div id="searchJobLocation">
+                            <input type="text" placeholder="Location" id="locationText">
+                        </div>
+
+                    </div>
+                </form>
+                <ul id="searchParam">
+                    <li>
+                        <label>
+                            <input type="checkbox" value="nursing" checked="checked">
+                            Nursing
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="other" checked="checked">
+                            Other
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="therapist" checked="checked">
+                            Therapist
+                        </label>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="jobListingDiv">
+                <div id="jobListingLabels"><h4 id="jobTitles">Job Titles</h4><h4 id="jobLocationLabel">Location</h4><h4 id="jobDateLabel">Freshness</h4></div>
+                <ul class="jobListings">
+
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="footerTop">
+            <div class="center">
+                <div id="footerLogo">
+                     <img src="AlegiantLogo.png">
+                </div>
+                <ul id="footerNavMenu">
+                    <li id="topBtnFooter" class="menuItem"><a href="">Top</a></li>
+                    <li id="aboutBtnFooter" class="menuItem"><a href="">About</a></li>
+                    <li id="jobSeekersBtnFooter" class="menuItem"><a href="">Job Seekers</a></li>
+                    <li id="newsBtnFooter" class="menuItem"><a href="">News</a></li>
+                    <li id="jobSearchBtnFooter" class="menuItem"><a href="">Job Search</a></li>
+                    <li id="contactBtnFooter" class="menuItem"><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div id="footerCopyright">Copyright &copy; 2016 Alegiant Services</div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ======================MOBILE==================== -->
+
+<div id="mobile">
+    <nav class="container-fluid">
+            <ul class="nav navbar-right list-inline socialNav">
                 <li class="facebook"><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                 <li class="twitter"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
+                <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i><strong>  800-226-9917</strong></a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Employee Login</a></li>
+            </ul>   
+    </nav>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#" id="logo"><img src="AlegiantLogo.png"></a>
         </div>
-    </div>
-
-    <div id="searchFormHeader" class="jumbotron">
-        <div class="center">
-            <h3>Find Your New Job</h3>
-            <div id="searchFormWrap">
-                <form id="searchForm">
-                    <div class="form-input">
-                        <input type="text" placeholder="Job Title" id="searchKeywords">
-                    </div>
-                    <div class="form-input">
-                        <input type="text" placeholder="Desired Location" id="searchLocation">
-                    </div>
-                    <input type="submit" id="findButton" value="Find">
-                </form>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div id="content">
-    
-</div>
-
-<div id="footer">
-    <div id="footerTop">
-        <div class="center">
-            <div id="footerLogo">
-                 <img src="AlegiantLogo.png">
-            </div>
-            <ul id="footerNavMenu">
-                <li id="topBtn" class="menuItem"><a href="">Top</a></li>
+        <div class="collapse navbar-collapse text-center" id="myNavbar">
+            <i class="fa fa-caret-down jobSeekDrop navbar-toggle" data-toggle="collapse" data-target="#jobSeekMenu" aria-hidden="true"></i>
+            <ul class="nav navbar-nav" id="navSpacing">
                 <li id="aboutBtn" class="menuItem"><a href="">About</a></li>
-                <li id="jobSeekersBtn" class="menuItem"><a href="">Job Seekers</a></li>
+                <li id="jobSeekersBtn" class="menuItem jobSeek">
+                        <a href="">Job Seekers</a>
+                </li>
+                <div id="jobSeekMenu" class="collapse navbar-collapse text-center">
+                    <a href=""><li id="nursingBtn" class="subMenuItem">Nursing</li></a>
+                    <a href=""><li id="alliedHealthBtn" class="subMenuItem">Allied Health</li></a>
+                    <a href=""><li id="advPracBtn" class="subMenuItem">Advanced Practice</li></a>
+                    <a href=""><li id="travelBenefitBtn" class="subMenuItem">Traveling - Benefits</li></a>
+                    <a href=""><li id="travelFaqBtn" class="subMenuItem">Traveling - FAQ</li></a>
+                </div>
                 <li id="newsBtn" class="menuItem"><a href="">News</a></li>
                 <li id="jobSearchBtn" class="menuItem"><a href="">Job Search</a></li>
                 <li id="contactBtn" class="menuItem"><a href="">Contact</a></li>
             </ul>
+        </div> 
+      </div>
+    </nav>
+
+
+        <div id="searchFormHeader" class="center container-fluid">
+            <div class="center">
+                <h3>Find Your New Job</h3>
+                <div id="searchFormWrap">
+                    <form id="searchForm">
+                        <div class="form-input">
+                            <input type="text" placeholder="Job Title" id="searchKeywords">
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="Desired Location" id="searchLocation">
+                        </div>
+                        <br>
+                        <br>
+                        <input type="submit" id="findButton" value="Find">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <div id="content">
+        <div class="center">
+
+            <div class="titleBanner">
+                <div class="banner">
+                    <h1>Search</h1>
+                </div>
+            </div>
+
+            <div id="searchDiv">
+                <form id="jobSearchForm">
+                    <div id="searchJobs">
+
+                        <div id="searchJobKeywords">
+                            <input type="text" placeholder="Keywords" id="keywordsText">
+                            <input type="text" placeholder="Location" id="locationText">
+                        </div>
+
+                    </div>
+                </form>
+                <ul id="searchParam">
+                    <li>
+                        <label>
+                            <input type="checkbox" value="nursing" checked="checked">
+                            Nursing
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="other" checked="checked">
+                            Other
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" value="therapist" checked="checked">
+                            Therapist
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="jobListingDiv">
+                <div id="jobListingLabels"><h4 id="jobTitles">Job Titles</h4><h4 id="jobLocationLabel">Location</h4><h4 id="jobDateLabel">Freshness</h4></div>
+                <ul class="jobListings">
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!--     <div class="container-fluid text-center results">
+        <h3>Job Results</h3>
+        <h3 class="searchFormHeader">About Alegiant Services</h3>
+        <p class="col-md-3"></p>
+        <p class=" col-md-6 resultContent text-center">Alegiant Services has over 10 years of successful experience in placing qualified healthcare professionals. We have established long term relationships with healthcare facilities and hospitals all over the United States. Having done so, we can offer you the best possible opportunity for you to most fully utilize your professional skills. We will keep your job search confidential, present you to all the jobs available in your desired location and setting, negotiate the best salary, and get you responses ASAP from employers.
+        Alegiant Services is now interviewing qualified &amp; interested candidates for this position.</p>
+    </div> -->
+
+<div class="text-center logobkgd" ><img id="footerLogo" src="AlegiantLogo.png"></div>
+    <div class="footer center">
+        <div id="footerTop">
+            <div class="nav nav-pills" id="footerNav">
+                <ul id="footerNavMenu ">
+                     
+                    <li id="topBtnFooter" class="menuItem"><a href="">Top</a></li>
+                    <li id="aboutBtnFooter" class="menuItem"><a href="">About</a></li>
+                    <li id="jobSeekersBtnFooter" class="menuItem"><a href="">Job Seekers</a></li>
+                    <li id="newsBtnFooter" class="menuItem"><a href="">News</a></li>
+                    <li id="jobSearchBtnFooter" class="menuItem"><a href="">Job Search</a></li>
+                    <li id="contactBtnFooter" class="menuItem"><a href="">Contact</a></li>
+                </ul>
+                <br>
+            </div>    
         </div>
     </div>
     <div id="footerBottom">
@@ -93,7 +313,7 @@
 
 <!-- instead of post and previous have top 3 suggested jobs -->
 
-<!-- <script type="text/javascript" src=""></script> -->
+<script type="text/javascript" src="searchLogic.js"></script>
 <script src="https://use.fontawesome.com/2ce3b4e69a.js"></script>
 </body>
 </html>

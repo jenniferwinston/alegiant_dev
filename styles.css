@@ -1,8 +1,349 @@
-.center{
-	position: relative;
-	width: 960px;
-	margin: 0 auto;
+/*======DESKTOP STYLES======*/
+
+@media only screen and (min-width: 415px) {
+	.center{
+	    position: relative;
+	    width: 960px;
+	    margin: 0 auto;
+ 	}
+
+ 	.subMenuItem{
+ 		padding-top: 3px !important;
+ 		padding-bottom: 6px !important;
+ 	}
+
+ 	#jobSeekDropdown{
+ 		display: none;
+ 		padding-left: 0px;
+ 		z-index: +2;
+ 		list-style: none;
+ 		position: absolute;
+ 		left: 355px;
+ 		top: 67px;
+ 		width: 206px;
+ 		padding-top: 10px;
+ 		padding-bottom: 2px;
+ 		background-color: #e3e4e6;
+ 		border-radius: 5px;
+ 	}
+
+ 	#jobSeekDropdown a li{
+ 		color: #2f9ccf;
+ 		padding-left: 20px;
+ 		text-align: left;
+ 		padding-bottom: 10px;
+ 		position: relative;
+		font-weight: 400;
+		font-size: 17px;
+		font-style: normal;
+	    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+ 	}
+
+ 	#logo{
+	    float: left;
+	    width: 227px;
+	    height: 96px;
+	}
+
+	#socialMedia{
+	    float: right;
+	    padding-top: 46px;
+	    list-style: none;
+	}
+
+	#socialMedia>li{
+    	float: left;
+    	width: 20px;
+    	height: 18px;
+	}
+
+	#infoNav{
+	    position: absolute;
+	    right: 0;
+	    width: 100%;
+	    z-index: 500px;
+	    font-weight: 400;
+	    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	}
+
+	#searchFormHeader{
+	    background-color: #e3e4e6;
+	    height: 76px;
+	    padding: 0px;
+	    border-radius: 0px;
+	}
+
+	#content{
+		min-height: calc(100vh - 126px);
+	}
+
+	.slant1{
+		top: 42px;
+	}
+
+	#jobDescription h3{
+	    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 24px;    
+	    color: #2f9ccf;
+	    margin-bottom: 15px;    
+	}
+
+	#footer{
+	    margin-top: 0px !important;
+	    width: 100%;
+	    height: 126px;
+	}
+
+	#footerLogo{
+	    float: left;
+	    width: 141px;
+	    height: 60px;
+	}
+
+
+	#footerBottom{
+	    background-color: #eeeeee;
+	    width: 100%;
+	    height: 53px;
+	    margin-top: 0px !important;
+	}
+
+	#mobile{
+		display: none;
+	}
+
+	#searchDiv {
+		width: 100%;
+		background-color: #eee;
+		height: 20px;
+		padding: 1.5em;
+	}
+
+	#jobSearchForm{
+	}
+
+	#searchJobs{
+		margin-bottom: -10px;
+	}
+
+	#searchJobKeywords{
+		float: left;
+		padding-right: .5em;
+		width: 50%;
+	}
+
+	#searchJobLocation{
+		float: right;
+		padding-right: .5em;
+		width: 50%;
+	}
+
+	#keywordsText, #locationText{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	#searchParam{
+		padding-left: 0px;
+		font-size: .83em;
+		background-color: #f9f9f9;
+		border-top: 1px solid #e5e5e5;
+		list-style: none;
+	}
+
+	#searchParam li {
+		margin-top: 5px;
+		padding: .5em 1em;
+		float: left;
+		border-right: 1px solid #eee;
+	}
+
+	input[type=checkbox]{
+		position: relative;
+		top: 2.5px;
+	}
+
+	.titleBanner{
+		height: 68px;
+		width: 544px !important;
+		padding-top: 32px;
+		margin-bottom: 62px;
+	}
+
+	.banner{
+		float: left;
+		width: 444px !important;
+		height: 68px;
+		background-color: #63b3d1;
+	}
+
+	#footerTop{
+		background-color: #f9f9f9;
+		width: 100%;
+		height: 74px !important;
+	}
+
+	#footerCopyright{
+		margin: 0px !important;
+		text-align: center;
+		padding-top: 17px;
+		color: #686868;
+		font-size: 13px;
+		font-style: normal;
+		font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+		font-weight: 400;
+	}
+	#jobListingDiv{
+		margin-top: 40px;
+	}
+
+	.jobListings{
+		padding-left: 0px;
+	}
+
+	#jobListings li{
+		list-style: none outside;
+		border-bottom: 1px solid #eee;
+		padding: 1em 1em 1em 2em;
+		overflow: hidden;
+		line-height: 1.5em;
+		text-decoration: none;
+	}
+
+	#jobListings div{
+		float: left;
+	}
+
+	.jobWrapper{
+		width: 100%;
+	}
+
+	.allJobListings{
+		width: 100%;
+	}
+
+	.position{
+		font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+    	font-style: normal;
+    	font-weight: 700;
+    	font-size: 12px;
+    	color: #666666;
+		width: 50%;
+	}
+
+	.location{
+		width: 38%;
+    	padding: 0 0 0 1em;
+    	color: #999;
+    	line-height: 1.5em;
+	}
+
+	.jobListInfo{
+		font-size: 12px;
+		width: 12%;
+		padding: 0 0 0 1em;
+    	margin: 0;
+    	line-height: 1.5em;
+    	color: #999;
+    	list-style: none outside;
+	}
+/*
+	#jobListings li a{
+		border-bottom: 1px solid #eee;
+		padding: 1em 1em 1em 2em;
+		border: 0;
+		overflow: hidden;
+		line-height: 1.5em;
+		text-decoration: none;
+	}*/
+
 }
+
+/*======MOBILE STYLES======*/
+
+.center{
+	margin: 0 auto;
+	
+}
+
+
+/*===Job Listing styles===*/
+
+	.jobListingDiv{
+		margin-top: 40px;
+	}
+
+	.jobListings{
+		padding-left: 0px;
+	}
+
+	.jobListings li{
+		list-style: none outside;
+		border-bottom: 1px solid #eee;
+		padding: 1em 1em 1em 2em;
+		overflow: hidden;
+		line-height: 1.5em;
+		text-decoration: none;
+	}
+
+	.jobListings div{
+		float: left;
+	}
+
+	.jobWrapper{
+		width: 100%;
+	}
+
+	.allJobListings{
+		width: 100%;
+	}
+
+	.position{
+		font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+    	font-style: normal;
+    	font-weight: 700;
+    	font-size: 12px;
+    	color: #666666;
+		width: 40%;
+	}
+
+	.location{
+		width: 33%;
+    	padding: 0 0 0 1em;
+    	color: #999;
+    	line-height: 1.5em;
+	}
+
+	.jobListInfo{
+		font-size: 12px;
+		width: 27%;
+		padding: 0 0 0 1em;
+    	margin: 0;
+    	line-height: 1.5em;
+    	color: #999;
+    	list-style: none outside;
+	}
+
+	#jobListingLabels{
+		height: 40px;
+		color: #63b4d1;
+		border-bottom: 1px solid #63b4d1;
+		padding-left: 12px;
+	}
+
+	#jobListingLabels h4{
+		float: left;
+	}
+
+	#jobTitles{
+		width: 42%;
+	}
+
+	#jobLocationLabel{
+		width: 31%;
+	}
 
 /*===Header styles===*/
 
@@ -19,15 +360,31 @@
 
 /*===Nav Menu Header styles===*/
 
+.navbar {
+	width: 100%;
+}
+/*.navbar-collapse {
+	overflow: hidden;
+}*/
+/*.navbar-collapse.collapse.in {
+   background-color: #f9f9f9;
+}
+.navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}*/
+
+.navbar-default .navbar-collapse{
+	border: none;
+}
+
 #logo{
 	float: left;
-	width: 227px;
+	margin-top:0;
 	height: 96px;
 }
 
 #logo img{
-	height: 96px;
-	width: 227px;
+	width: 225px;
 }
 
 #mainNavMenu{
@@ -42,15 +399,73 @@
 	text-decoration: none;
 }
 
+.navbar{
+	border: none;
+}
+
+.navbar-toggle {
+	padding: 12px 12px !important;
+	margin-top: 50px !important;
+	margin-right: 30px !important;
+}
+
+.nav>li{
+	background-color: #f8f8f8;
+}
+
+#myNavbar li{
+	border: 2px solid #f8f8f8;
+}
+
+.socialNav li{
+	background-color: white !important;
+}
+
+.jobSeek{
+	position: relative;
+	z-index: +1;
+}
+
+.jobSeek a{
+	background-color: #f8f8f8;
+	width: 100%;
+}
+
+.jobSeekDrop{
+	width: 15px;
+	height: 15px;
+	border: none;
+	background-color: transparent !important;
+	position: relative;
+	z-index: +3;
+	top: 65px;
+	right: 100px;
+	margin: 0px !important;
+	padding: 0px !important;
+
+}
+
+#jobSeekMenu{
+	position: relative;
+	background-color: #e3e4e6;
+    -moz-box-shadow:    inset  0  15px 25px -8px #696868, 
+                        inset  0 -15px 25px -8px #696868;
+    -webkit-box-shadow: inset  0  15px 25px -8px #696868, 
+                        inset  0 -15px 25px -8px #696868;
+     box-shadow:        inset  0  15px 25px -8px #696868, 
+                        inset  0 -15px 25px -8px #696868;
+}
+
+#jobSeekMenu li{
+	border: none;
+	padding: 15px;
+}
+
+
 #mainNavMenu li{
 	float: left;
 	padding: 7px 22px;
-	color: #1c5071;
-}
-
-#mainNavMenu li:hover{
-	border-radius: 7px 7px 7px 7px;
-	background-color: #e3e4e6;
+	color: #1c5071 !important;
 }
 
 .menuItem{
@@ -65,19 +480,45 @@
 
 #socialMedia{
 	float: right;
-	padding-top: 46px;
 	list-style: none;
 }
 
 #socialMedia>li{
 	float: left;
-	width: 20px;
+	width: 25px;
 	height: 18px;
+}
+
+.socialNav li>a{
+	padding: 10px 13px !important;
+}
+
+
+#footerNav {
+	/*position: absolute;*/
+	width: 100%;
+	z-index: 500px;
+	font-weight: 400;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+}
+#footerNav ul{
+	position: relative;
+	display: block;
+	text-align: center;
+	list-style: none;
+}
+#footerNav ul>li {
+	font-size: 19px;
+	position: relative;
+	display: inline-block;
+}
+
+#footerNav ul>li a{
+	text-decoration: none;
 }
 
 #infoNav{
 	position: absolute;
-	right: 0;
 	width: 100%;
 	z-index: 500px;
 	font-weight: 400;
@@ -87,8 +528,10 @@
 #infoNav ul{
 	position: relative;
 	display: block;
+	margin-right: 25px;
 	text-align: right;
 	list-style: none;
+
 }
 
 #infoNav ul>li {
@@ -101,14 +544,34 @@
 #infoNav ul>li a{
 	text-decoration: none;
 }
+/*#navSpacing {
+	margin: 40px;
+}*/
+#navHeader{
+	float: none;
+}
+.navbar-default {
+	height: 120px;
+}
+
+
+
 
 /*===Search Form Header styles===*/
 
 #searchFormHeader{
 	background-color: #e3e4e6;
-	height: 76px;
 	padding: 0px;
 	border-radius: 0px;
+}
+
+.resultContent {
+	font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 #searchFormHeader h3{
@@ -127,6 +590,7 @@
 	padding-left: 32px;
 	padding-top: 20px;
 	float: left;
+	padding-bottom: 20px;
 }
 
 .form-input{
@@ -173,13 +637,12 @@
 
 .titleBanner{
 	height: 68px;
-	width: 544px;
 	padding-top: 32px;
 	margin-bottom: 62px;
 }
 
 .slant1{
-	top: 42px;
+	/*top: 42px;*/
 	position: absolute;
 	z-index: +2;
 	float: left;
@@ -201,7 +664,7 @@
 
 .banner{
 	float: left;
-	width: 444px;
+	width: 100%;
 	height: 68px;
 	background-color: #63b3d1;
 }
@@ -247,7 +710,7 @@
 	margin-bottom: 56px;
 }
 
-#jobTitle{
+.jobTitle{
 	text-decoration: none;
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-style: normal;
@@ -257,12 +720,12 @@
 	margin-bottom: 7px;	
 }
 
-#jobPost{
+.jobPost{
 	line-height: 2.7em;
 	float: left;
 }
 
-#jobPost ul {
+.jobPost ul {
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -309,21 +772,21 @@
 	margin-right: 4px;
 }
 
-#jobDescription{
+.jobInfo{
 	margin: 0 0 1.5em;
 	border-bottom: solid 1px #ecedef;
 }
 
-#jobDescription h2{
+.jobInfo h3{
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 24px;	
+	font-size: 20px;	
 	color: #2f9ccf;
 	margin-bottom: 15px;	
 }
 
-#jobDescription p{
+.jobInfo p{
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -332,27 +795,39 @@
 	margin-bottom: 20px;	
 }
 
+.jobInfo button{
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.jobDescription{
+	width: 80%;
+	line-height: 2.5;
+}
+
 
 
 /*===Footer Styles===*/
 
 #footer{
-	margin-top: 150px;
+	margin-top: 15px;
 	width: 100%;
-	height: 126px;
 }
 
 /*===Footer Top styles===*/
+.alignFooter {
+
+}
 
 #footerTop{
 	background-color: #f9f9f9;
 	width: 100%;
-	height: 74px;
+	height: 30px;
 }
 
 #footerLogo{
-	float: left;
-	width: 141px;
+	margin-right: auto;
+	margin-left: auto;
 	height: 60px;
 }
 
@@ -379,20 +854,144 @@
 	border-left: solid 1px #63b3d1;
 }
 
+
 /*===Footer Bottom styles===*/
 
 #footerBottom{
-	background-color: #eeeeee;
 	width: 100%;
-	height: 53px;
+	margin-top: 20px;
 }
 
 #footerCopyright{
 	text-align: center;
-	padding-top: 17px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	color: #686868;
 	font-size: 13px;
 	font-style: normal;
 	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
 	font-weight: 400;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+#socialMedia{
+	float: none !important;
+	list-style: none;
+}
+	#infoNav ul{
+		width: 400px;
+		position: relative;
+		display: block;
+		margin-right: 25px;
+		margin-left: 200px;
+		text-align: none;
+		list-style: none;
+
+	}
+	#mainNavMenu li{
+		float: left;
+		padding: 7px 5px;
+		color: #1c5071 !important;
+	}
+	#footerNav ul{
+		padding: 0px !important;
+	}
+
+	#myNavbar ul #contactBtn{
+		border-bottom: solid 3px #e3e4e6 !important;
+	}
+
+	input[type=checkbox]{
+		position: relative;
+		top: 2.5px;
+		z-index: -1;
+	}
+
+	#jobSearchForm{
+		margin: 0px;
+	}
+
+	#searchParam{
+		padding-left: 0px;
+		font-size: .83em;
+		background-color: #f9f9f9;
+		list-style: none;
+	}
+
+	#searchParam li {
+		padding: .5em 1em;
+		float: left;
+		border-right: 1px solid #eee;
+	}
+
+	.results{
+		margin-top: 40px;
+	}
+
+	.logobkgd {
+		background-color: #f9f9f9;
+		width: 100%;
+	}
+
+    #footerNav ul>li {
+        font-size: 11px;
+    }
+    #footerLogo {
+    	width: auto;
+    	height: 60px;
+    	
+    }
+    .navbar-right li{
+   		float: right;
+   		overflow: hidden;
+   		padding: 0px;
+   		font-size: 11px;
+   }
+   .navbar {
+   	margin-bottom: 0;
+   }
+   .nav li>a {
+   		padding: 10px 6px;
+   }
+   #searchFormWrap {
+   	padding-top: 0px;
+   }
+   #searchFormHeader h3 {
+   	float: none;
+   	height: 23px;
+   	margin-top: 0px;
+   }
+   .form-input {
+   	height: 42px;
+   }
+
+   .titleBanner {
+   	/*padding-top: 0px;*/
+   	height: 35px;
+   }
+   #searchParam {
+   	list-style: none;
+   }
+   #searchJobKeywords{
+		width: 100%;
+	}
+	#searchJobKeywords input{
+		padding: 3px;
+		font-size: 17px;
+		width: 45%;
+		margin: 2%;
+	}
+	#jobSearchForm{
+		background-color: #e3e4e6;
+	}
+
+@media only screen and (max-width: 414px) {
+	#desktop{
+		display: none;
+	}
+	#mobile{
+		display: block;
+	}
 }
