@@ -26,11 +26,23 @@ function displayJobInfo(job){
 displayJobInfo(jobsArr[4]);
 
 
-$("#jobSeekersBtn, #jobSeekDropdown").hover(function(){
-    	$("#jobSeekDropdown").css("display", "block");
-    	$("#jobSeekerBtn").css("borderRadius", "7px 7px 7px 7px");
-    	$("#jobSeekerBtn").css("backgroundColor", "#e3e4e6");
-    }, function(){
-    	$("#jobSeekDropdown").css("display", "none");
-});
+$('#aboutBtn, #newsBtn, #jobSearchBtn, #contactBtn').hover(
+	function(){
+		$(this).css("borderRadius", "7px 7px 7px 7px");
+		$(this).css("backgroundColor", "#e3e4e6");
+	}, function(){
+		$(this).css("backgroundColor", "#f9f9f9");
+	}
+);
+
+$("#jobSeekersBtn, #jobSeekDropdown").hover(
+	function(){
+		$("#jobSeekDropdown").css("display", "block");
+		$("#jobSeekersBtn").css("borderRadius", "7px 7px 7px 7px");
+		$("#jobSeekersBtn").css("backgroundColor", "#e3e4e6");
+	}, function(){
+		$("#jobSeekDropdown").css("display", "none");
+		$("#jobSeekersBtn").css("backgroundColor", "#f9f9f9");
+	}
+);
 
