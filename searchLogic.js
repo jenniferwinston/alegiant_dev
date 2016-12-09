@@ -17,6 +17,8 @@ for (i = 0; i < jobsArr.length; i++){
 		"</li>");
 }
 
+$(".jobListingDiv").append("<div class='loadMoreJobs'>Load more jobs<i class='fa fa-caret-down' aria-hidden='true'></i></div>");
+
 $('#aboutBtn, #newsBtn, #jobSearchBtn, #contactBtn').hover(
 	function(){
 		$(this).css("borderRadius", "7px 7px 7px 7px");
@@ -43,4 +45,10 @@ $(".allJobListings").hover(function(){
     }, function(){
     	var jobNum = $(this).data("id");
     	$("#job" + jobNum).css("backgroundColor", "white");
+});
+
+$(".loadMoreJobs").hover(function(){
+    	$(".loadMoreJobs").css("backgroundColor", "#f9f9f9");
+    }, function(){
+    	$(".loadMoreJobs").css("backgroundColor", "white");
 });

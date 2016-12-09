@@ -271,11 +271,25 @@
 
 /*===Job Listing styles===*/
 
+	.loadMoreJobs{
+		cursor: pointer;
+		text-align: center;
+		padding: 20px;
+    	border-bottom: 1px solid #63b4d1;
+    	margin-bottom: 25px;
+   		color: #63b4d1;
+	}
+
+	.loadMoreJobs i{
+		padding-left: 10px;
+	}
+
 	.jobListingDiv{
 		margin-top: 40px;
 	}
 
 	.jobListings{
+		margin-bottom: 0px;
 		padding-left: 0px;
 	}
 
