@@ -1,0 +1,15 @@
+{
+    "name": "admin/alegiant-app",
+    "description": "Website app for checking and updating current job listings",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Kaltenbaugh",
+            "email": "d.a.kaltenbaugh@gmail.com"
+        }
+    ]
+}
