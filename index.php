@@ -24,18 +24,11 @@ $res = $client->request('GET', $bh_auth_url, ['query' => $auth_array]);
 //  Can do a try to make sure that `$res->getStatusCode();` is 200
 //      If not, log the error.
 
-//  $res->getBody() returns a string of the form
-//      "code":"{actual code with : & everything}","client_id":"{actual client_id}"
-//      Exploding on the comma puts the "code":"{asdfadfa}" in index zero
-//      then we can explode that index (string) on quote (") and index 3 is the actual code
-//      There has to be a better way - so this will go into a function soon.
+//  Use json_decode to parse the response object which is in the form of
+//      {"code":"{actual code}","client_id":"{actual client id}"}
 //      12.11.2016 ~ DAK
-$tmp_left = explode(",", $res->getBody());
-$tmp_left = explode("\"", $tmp_left[0]);
-$code = $tmp_left[3];
-
-echo "Code: $code <br/>";
-// {"type":"User"...'
+$json = json_decode($res->getBody());
+echo "Code: ". $json->code;
 ?>
 <!DOCTYPE html>
 <html lang="en">
