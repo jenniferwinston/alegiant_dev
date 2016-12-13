@@ -1,0 +1,319 @@
+/*==========Desktop Header Styles==========*/
+
+@media only screen and (min-width: 415px) {
+
+	#headerContainer{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#headerNav{
+		background-color: #f9f9f9;
+		height: 96px;
+		width: 100%
+	}
+
+ 	.subMenuItem{
+ 		padding-top: 3px !important;
+ 		padding-bottom: 6px !important;
+ 	}
+
+ 	#jobSeekDropdown{
+ 		display: none;
+ 		padding-left: 0px;
+ 		z-index: +2;
+ 		list-style: none;
+ 		position: absolute;
+ 		left: 355px;
+ 		top: 67px;
+ 		width: 206px;
+ 		padding-top: 10px;
+ 		padding-bottom: 2px;
+ 		background-color: #e3e4e6;
+ 		border-radius: 5px;
+ 	}
+
+ 	#jobSeekDropdown a li{
+ 		color: #2f9ccf;
+ 		padding-left: 20px;
+ 		text-align: left;
+ 		padding-bottom: 10px;
+ 		position: relative;
+		font-weight: 400;
+		font-size: 17px;
+		font-style: normal;
+	    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+ 	}
+
+ 	#logo{
+	    float: left;
+	    width: 227px;
+	    height: 96px;
+	} 
+
+	#socialMedia{
+	    float: right;
+	    padding-top: 46px;
+	    list-style: none;
+	}
+
+	#socialMedia>li{
+    	float: left;
+    	width: 20px;
+    	height: 18px;
+	}
+
+	#infoNav{
+	    position: absolute;
+	    right: 0;
+	    width: 100%;
+	    z-index: 500px;
+	    font-weight: 400;
+	    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	}
+
+	#searchFormHeader{
+	    background-color: #e3e4e6;
+	    height: 76px;
+	    padding: 0px;
+	    border-radius: 0px;
+	}
+
+}
+
+/*==========Mobile Header Styles==========*/
+
+
+.navbar {
+	width: 100%;
+}
+
+.navbar-default .navbar-collapse{
+	border: none;
+}
+
+#navHeader{
+	float: none;
+}
+
+.navbar-default {
+	height: 120px;
+}
+
+#logo{
+	float: left;
+	margin-top:0;
+	height: 96px;
+}
+
+#logo img{
+	width: 225px;
+}
+
+#mainNavMenu{
+	list-style: none;
+	float: left;
+	margin-left: 40px;
+	padding-left: 0px;
+	padding-top: 36px;
+}
+
+#mainNavMenu li a{
+	text-decoration: none;
+}
+
+.navbar{
+	border: none;
+}
+
+.navbar-toggle {
+	padding: 12px 12px !important;
+	margin-top: 50px !important;
+	margin-right: 30px !important;
+}
+
+.nav>li{
+	background-color: #f8f8f8;
+}
+
+#myNavbar li{
+	border: 2px solid #f8f8f8;
+}
+
+.socialNav li{
+	background-color: white !important;
+}
+
+.jobSeek{
+	position: relative;
+	z-index: +1;
+}
+
+.jobSeek a{
+	background-color: #f8f8f8;
+	width: 100%;
+}
+
+.jobSeekDrop{
+	width: 15px;
+	height: 15px;
+	border: none;
+	background-color: transparent !important;
+	position: relative;
+	z-index: +3;
+	top: 65px;
+	right: 100px;
+	margin: 0px !important;
+	padding: 0px !important;
+
+}
+
+#jobSeekMenu{
+	position: relative;
+	background-color: #e3e4e6;
+    -moz-box-shadow:    inset  0  15px 25px -8px #696868, 
+                        inset  0 -15px 25px -8px #696868;
+    -webkit-box-shadow: inset  0  15px 25px -8px #696868, 
+                        inset  0 -15px 25px -8px #696868;
+     box-shadow:        inset  0  15px 25px -8px #696868, 
+                        inset  0 -15px 25px -8px #696868;
+}
+
+#jobSeekMenu li{
+	border: none;
+	padding: 15px;
+}
+
+
+#mainNavMenu li{
+	float: left;
+	padding: 7px 22px;
+	color: #1c5071 !important;
+}
+
+.menuItem{
+	text-align: center;
+	font-style: normal;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #257;
+	text-decoration: none;
+}
+
+#socialMedia{
+	float: right;
+	list-style: none;
+}
+
+#socialMedia>li{
+	float: left;
+	width: 25px;
+	height: 18px;
+}
+
+.socialNav li>a{
+	padding: 10px 13px !important;
+}
+
+#infoNav{
+	position: absolute;
+	width: 100%;
+	z-index: 500px;
+	font-weight: 400;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+}
+
+#infoNav ul{
+	position: relative;
+	display: block;
+	margin-right: 25px;
+	text-align: right;
+	list-style: none;
+
+}
+
+#infoNav ul>li {
+	font-size: 12px;
+	position: relative;
+	display: inline-block;
+	padding-left: 15px;
+}
+
+#infoNav ul>li a{
+	text-decoration: none;
+}
+
+
+/*==========Header Search Styles==========*/
+
+
+#searchFormHeader{
+	background-color: #e3e4e6;
+	padding: 0px;
+	border-radius: 0px;
+}
+
+.resultContent {
+	font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#searchFormHeader h3{
+	height: 46px;
+	line-height: 36px;
+	float: left;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #646667;
+	padding-left: 40px;	
+}
+
+#searchFormWrap{
+	padding-left: 32px;
+	padding-top: 20px;
+	float: left;
+	padding-bottom: 20px;
+}
+
+.form-input{
+	float: left;
+	width: 235px;
+	height: 37px;
+	margin-right: 22px;
+}
+
+.form-input input[type=text]{
+	border-radius: 10px 10px 10px 10px;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	color: #666666;
+	margin-left: 5px;
+}
+
+#findButton{
+	border: none;
+	font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+	font-style: normal;
+	font-size: 17px;
+	color: white;
+	background-color: #3d758d;
+	width: 82px;
+	height: 37px;
+	cursor: pointer;
+	border-radius: 7px 7px 7px 7px;
+}
