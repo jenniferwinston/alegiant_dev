@@ -20,9 +20,6 @@
     require ('./vendor/autoload.php');
     require_once('./config/bullhorn.api.php');
 
-    // Local variables
-    $client = new GuzzleHttp\Client();
-
     /**
      *  Step one - request authorization code from Bullhorn API using Alegiant credentials
      *      Requires configuration settings in /config/bullhorn.api.php and guzzlehttp from
@@ -41,7 +38,7 @@
     $json = httpCall('POST', $bh_oauth_url, $bh_oauth_array, "Oauth token retrieved...<br/>");
         // Returns access_token, token_type & refresh_token
     $bh_login_array['access_token'] = $json->access_token;
-    // TODO-Dan store refresh_token in session variable or database for use throughout
+    // TODO-Dan store refresh_token in session storage or database for use throughout
     /**
      *  Step three - Login to Bullhorn REST services
      */
@@ -53,18 +50,67 @@
 
     /**
      *  Step four - get jobs and show them
+     *  TODO-Dan add a check (db) to get highest id then override start and count in $bh_job_array before API query
      */
-    $json = httpCall('GET', $BhRestURL, $bh_job_array, "Found some jobs!<br/>");
-    // Show jobs until I figure out how to put them in the database
-    foreach ($json->data as $key){
-        echo "-------------------------------<br/><pre>";
-        var_dump($key);
-        echo "</pre>";
+    require_once('./config/alegiant.db.php');
+    // Get highest id from database.  If none returned, then set highest id to 0
+    $qry = $dbh->prepare("SELECT id FROM jobs ORDER BY id DESC LIMIT 1;");
+    $qry->execute();
+    $db_res = $qry->fetch();
+    if (isset($db_res['id'])) {
+        $highest_id = $db_res['id'];
+    } else {
+        $highest_id = 0;
     }
+    findJobs(0, 500, $BhRestURL, $bh_job_array, $dbh, $highest_id);
+    //  Check Bullhorn api and return jobs in $json
+    function findJobs($start, $count, $BhRestURL, $bh_job_array, $dbh, $highest_id) {
+        $bh_job_array['start'] = $start;
+        $bh_job_array['count'] = $count;
+        $json = httpCall('GET', $BhRestURL, $bh_job_array, "Found some jobs!<br/>");
+        // Setup the database handler ($dbh) if we have made it this far.  Config in alegiant.db.php and it is PDO
+        // Show jobs until I figure out how to put them in the database
+        foreach ($json->data as $key){
+            // Database needs: id, street, city, state, zip, county, dateAdded, dateModified, title & description
+            $qry  = "INSERT INTO jobs (id, street, city, state, zip, country, dateAdded, dateLastModified, title, description) ";
+            $qry .= "VALUES (:id, :street, :city, :state, :zip, :country, :dateAdded, :dateLastModified, :title, :description)";
+            $stmt = $dbh->prepare($qry);
+            $stmt_array = array (
+                ':id' => $key->id,
+                ':street' => $key->address->address1,
+                ':city' => $key->address->city,
+                ':state' => $key->address->state,
+                ':zip' => $key->address->zip,
+                ':country' => $key->address->countryID,
+                ':dateAdded' => $key->dateAdded,
+                ':dateLastModified' => $key->dateLastModified,
+                ':title' => $key->title,
+                ':description' => $key->description
+            );
+            // TODO-Dan make sure we go back and get any modified jobs later.
+            if ($key->id > $highest_id) {
+                try {
+                    $stmt->execute($stmt_array);
+                    var_dump($stmt_array);
+                } Catch (Exception $e) {
+                    echo "<br>Database error $e<br/>";
+                }
+            }
+        }
+        if (!empty($json) && ($count < 200000)){
+            echo "Count: $count";
+            findJobs($count, $count+500, $BhRestURL, $bh_job_array, $dbh, $highest_id);
+        } else {
+            exit();
+        };
+    }
+
+    echo "Done updating job database.<br/>";
+
     /**
      *  Guzzle it up function httpCall - more to follow but this helps a lot
-     *  TODO-Dan revisit echo from function - this may be a silent runner with a
-     *      redirect so output would not be good.  At least move it out to the
+     *  TODO-Dan revisit echo from function - this may be a silent runner with ...
+     *      a redirect so output would not be good.  At least move it out to the
      *      same level as the function call
      */
     function httpCall($method, $url, $call_array, $success_message) {

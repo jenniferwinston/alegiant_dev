@@ -4,12 +4,14 @@
  * User: Daniel Kaltenbaugh <d.a.kaltenbaugh@gmail.com>
  * Date: 12/12/2016
  * Time: 10:22 AM
- * TODO-Dan Move this functionality to the vendor autoload file
  */
+
 //  Variable declarations
 $bh_auth_url  = 'https://auth.bullhornstaffing.com/oauth/authorize';        // Step one
 $bh_oauth_url = 'https://auth.bullhornstaffing.com/oauth/token';            // Step two
 $bh_login_url = 'https://rest.bullhornstaffing.com/rest-services/login';    // Step three
+
+$curr_env = "dev"; // Options are dev, test, prod
 
 // Bullhorn API url to call to request an authorization token:
 $bh_client_id       = '4c9b0ca8-de30-4b11-9105-511006674c74';
@@ -49,7 +51,11 @@ $bh_login_array = array(
 $bh_job_array = array(
     'BhRestToken'   => '',  // Code value is added in step three of index.php after retrieved from API
     'query'         => "isOpen:1 AND isDeleted:0 AND NOT status:archive",
-    'fields'        => "id,clientCorporation,clientContact,description",
-    'count'         => 20,
+    'fields'        => "id,address,dateAdded,dateLastModified,title,description",
+    'orderBy'       => '+id',
+    'count'         => 500,
     'start'         => 0,
 );
+//  Proper query would include (ref: http://developer.bullhorn.com/sites/default/files/BullhornRESTAPI_0_2.pdf)
+//      JobOrder section:  id, address, dateAdded, dateLastModified, description
+//  Previous query (test):     'fields'        => "id,clientCorporation,clientContact,description",
