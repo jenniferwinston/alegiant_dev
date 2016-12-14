@@ -1,0 +1,256 @@
+@media only screen and (min-width: 415px) {
+
+/*====Banner & Register====*/
+
+#mainBannerImg{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 460px;
+	background: #fff url("http://alegiantservices.com/wp-content/uploads/2016/08/alegiant-banner-small.jpg") no-repeat center;
+}
+
+#registerFormWrapper{
+    position: absolute;
+    display: block;
+    left: 75%;
+    top: 40px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+}
+
+#formWrapper{
+	margin: 10px 0px;
+}
+
+#registerForm{
+	box-sizing: border-box;
+	text-align: left;
+}
+
+#formTitle{
+	color: #1c5071;
+    margin: 0px 15px;
+    border-bottom: 1px solid #1c5071;
+    font-weight: 700;
+    font-size: 20px;	
+}
+
+#formBody{
+	padding: 15px;
+}
+
+#formFields {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+
+#formFields li{
+	margin: 5px 0px 5px 0px;
+    font-family: inherit;
+    letter-spacing: normal;
+    width: 100%;
+}
+
+/*.formAttr{
+	margin: 5px 10px 5px 10px;
+}*/
+
+.formAttr input{
+	color: #1c5071;
+    font-size: 16px;
+    border-radius: 4px;
+	width: 100%;
+	padding: 5px 4px;
+}
+
+.formAttr select{
+	color: #1c5071;
+    font-size: 16px;
+    border-radius: 4px;
+	width: 100%;
+	padding: 5px 4px;
+}
+
+#selectLicense{
+	width: 100%;
+}
+
+#textField{
+	border-radius: 4px;
+	color: #1c5071;
+	width: 100%;
+	height: 80px;
+	padding: 6px 8px;
+	line-height: 1.5;
+	resize: none;
+}
+
+#submitForm{
+    background: none;
+}
+
+/*======Recent Job Posts=======*/
+
+
+#recentPosts{
+	position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    min-width: 960px;
+    height: 220px;
+    background: #FFF;
+}
+
+#recentPosts h3{
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #666666;	
+}
+
+#pin{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 17px;
+    height: 22px;
+    margin: 0 auto 8px auto;
+    padding-top: 18px;
+    background: no-repeat bottom;
+}
+
+#recentPosts #jobPosts{
+	padding-left: 0px;
+	position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 940px;
+    height: 74px;
+    list-style: none;
+}
+
+#recentPosts #jobPosts>li{
+	position: relative;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 298px;
+    height: 74px;
+}
+
+#recentPosts #jobPosts>li h3{
+	position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+    margin: 0px;
+}
+
+#recentPosts #jobPosts>li h4{
+	position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #2f9ccf;
+    margin: 0px;
+}
+
+/*====Company Mission====*/
+
+
+#companyMission{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 960px;
+    padding-top: 45px;
+    margin-bottom: 40px;
+}
+
+#cloudBar{
+	position: absolute;
+    display: block;
+    overflow: hidden;
+    height: 92px;
+    width: 100%;
+    min-width: 960px;
+    top: 0;
+    background-color: #b3d7e0;
+}
+
+.titleBanner{
+	width: 100% !important;
+}
+
+.banner{
+	width: 89.5% !important;
+}
+
+#companyMissionContent{
+    position: relative;
+    display: block;
+    padding-left: 50px;
+
+}
+
+#missionText{
+	line-height: 2.7em;
+}
+
+#missionText .missionRows{
+	display: inline-block;
+	width: 264px;
+    padding-top: 30px;
+    margin-right: 44px !important;
+}
+
+#missionText p {
+	font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/*=====Travel Section=====*/
+
+#travelSection{
+	position: relative;
+    display: block;
+    width: 100%;
+    min-width: 960px;
+    padding-top: 45px;
+}
+
+/*#travelSection .titleBanner{
+	width: 701px !important;
+}*/
+
+#missionText .travelRows{
+	display: inline-block;
+	width: 402px;
+    margin-right: 50px;
+}
+
+}
