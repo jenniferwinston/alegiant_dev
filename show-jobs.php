@@ -17,12 +17,13 @@ foreach ($jobs as $job){
     $interval = $dateToday->diff($dateJobAdded);
     $int_interval = intval($interval->format('%a'));
     echo "Added ";
-    if ($int_interval != 1) {
-        echo $interval->format('%a days');
+    if ($int_interval == 0) {
+        echo 'today';
+    } elseif ($int_interval != 1) {
+        echo $interval->format('%a days ago');
     } else {
-        echo $interval->format('%a day');
+        echo $interval->format('%a day ago');
     }
-    echo " ago.";
     echo "<br/>";
     echo $job['description'];
     echo "<br/><br/>";
