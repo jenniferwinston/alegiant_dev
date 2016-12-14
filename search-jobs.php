@@ -7,17 +7,17 @@
  * TODO-Dan Add a getAge function
  */
 // Simulated $_GET from url incoming
-$get_title = "%RN%";
-$get_location = "%FL%";
+$get_title = "RN";
+$get_location = "FL";
 
 require_once ('./config/bullhorn.api.php');
 require_once ('./config/alegiant.db.php');
 $sql  = "SELECT * FROM jobs WHERE title LIKE ? OR city LIKE ? or state LIKE ? ORDER BY dateAdded DESC LIMIT 30;";
 
 $query = $dbh->prepare($sql);
-$query->execute(array($get_title, $get_location, $get_location));
+$query->execute(array("%$get_title%", "%$get_location%", "%$get_location%"));
 $jobs = $query->fetchAll();
 foreach ($jobs as $job) {
-    print_r($job);
+    echo "{$job['title']}: {$job['city']}, {$job['state']}.  Added {$job['dateAdded']}<br/>";
     echo "<br/><hr>";
 }

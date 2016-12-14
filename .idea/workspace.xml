@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fffa378-7d6f-4116-b133-d32f6b7166f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show-jobs.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/showJobs.php" afterPath="$PROJECT_DIR$/search-jobs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search-jobs.php" afterPath="$PROJECT_DIR$/search-jobs.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,10 +32,10 @@
         <entry file="file://$PROJECT_DIR$/search-jobs.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="567">
-              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#6#167#0#PHP" expanded="true" />
-                <marker date="1481723372478" expanded="true" signature="347:448" ph="SELECT * FRO... jobs" />
+                <marker date="1481723838671" expanded="true" signature="343:444" ph="SELECT * FRO... jobs" />
               </folding>
             </state>
           </provider>
@@ -207,12 +205,12 @@
       <workItem from="1481495038776" duration="97000" />
       <workItem from="1481500241263" duration="18124000" />
       <workItem from="1481640186133" duration="17668000" />
-      <workItem from="1481687547267" duration="3051000" />
+      <workItem from="1481687547267" duration="3522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41930000" />
+    <option name="totallyTimeSpent" value="42401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,10 +359,10 @@
     <entry file="file://$PROJECT_DIR$/search-jobs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding>
             <element signature="e#6#167#0#PHP" expanded="true" />
-            <marker date="1481723372478" expanded="true" signature="347:448" ph="SELECT * FRO... jobs" />
+            <marker date="1481723838671" expanded="true" signature="343:444" ph="SELECT * FRO... jobs" />
           </folding>
         </state>
       </provider>
