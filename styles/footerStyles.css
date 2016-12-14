@@ -44,6 +44,11 @@
 
 /*==========Mobile Footer Styles==========*/
 
+#goldSeal{
+	width: 60px;
+	height: 60px;
+	margin-top: 7px;
+}
 
 #footerNav {
 	width: 100%;
@@ -87,7 +92,7 @@
 }
 
 #footerLogo img{
-	width: 141px;
+	width: 201px;
 	height: 60px;
 	margin-top: 8px;
 }
@@ -95,7 +100,7 @@
 #footerNavMenu{
 	float: left;
 	padding-top: 26px;
-	padding-left: 58px;
+	padding-left: 75px;
 	list-style: none;
 }
 
