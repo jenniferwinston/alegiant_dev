@@ -1,0 +1,12 @@
+# Use pretty urls in for search in the form of /app/search/{keywords}/{location} and
+#   to select a specific job using /app/job/{id}.  Keywords = RN, OT, etc... and location can be city or state
+# TODO-Dan Add app/ to the beginning of the RewriteRules below
+# Enbale Rewriting
+RewriteEngine on
+
+# First up - get search/RN/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^search/([^/]+)/([^/]+)$ search.php?keywords=$1&location=$2 [L]
+
+RewriteRule ^job/(\w+)/?$   job.php?id=$1 [QSA,L]
