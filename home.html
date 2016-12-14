@@ -105,15 +105,15 @@
             <div id="recentPosts">
                 <div class="center">
                     <div id="pin"></div>
-                    <h3>Recent Job Posts:</h3>
+                    <h3>HOT JOBS!</h3>
                     <ul id="jobPosts">
-                            <li>
+                            <li id="hot-job0">
                                 <a href=""><h3>Job</h3><h4>Location</h4></a>
                             </li>
-                            <li>
+                            <li id="hot-job1">
                                 <a href=""><h3>Job</h3><h4>Location</h4></a>
                             </li>
-                            <li>
+                            <li id="hot-job2">
                                 <a href=""><h3>Job</h3><h4>Location</h4></a>
                             </li>
                     </ul>
@@ -294,5 +294,20 @@
 
 <!-- <script type="text/javascript" src="logic/homeLogic.js"></script> -->
 <script src="https://use.fontawesome.com/2ce3b4e69a.js"></script>
+<script>
+    $.ajax({
+        url: "jobs.php",
+        dataType: 'json'
+    }).done(function(response){
+        // console.log(response);
+        var jobsArr = response;
+        var freshness;
+        for (i = 0; i < 3; i++){
+            $("#hot-job"+i).html("<a href='#'><h3>"+ jobsArr[i].title +"</h3><h4>" + jobsArr[i].city + ", " + jobsArr[i].state + "</h4></a>");
+            /*console.log(jobsArr[i]);*/
+        }
+    });
+
+</script>
 </body>
 </html>
