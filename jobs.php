@@ -9,7 +9,7 @@
  */
 require_once ('./config/bullhorn.api.php');
 require_once ('./config/alegiant.db.php');
-$sql  = "SELECT * FROM jobs ORDER BY dateAdded DESC LIMIT 20;";
+$sql  = "SELECT * FROM jobs ORDER BY dateAdded DESC LIMIT 300;";
 $jobs = $dbh->query($sql);
 $json = json_encode($jobs->fetchAll());
 echo $json;

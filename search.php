@@ -22,7 +22,7 @@ if (isset($_GET['location'])) {
 
 require_once ('./config/bullhorn.api.php');
 require_once ('./config/alegiant.db.php');
-$sql  = "SELECT * FROM jobs WHERE title LIKE ? AND city LIKE ? or state LIKE ? ORDER BY dateAdded DESC LIMIT 30;";
+$sql  = "SELECT * FROM jobs WHERE title LIKE ? AND city LIKE ? or state LIKE ? ORDER BY dateAdded DESC LIMIT 60;";
 
 $query = $dbh->prepare($sql);
 $query->execute(array("%$get_title%", "%$get_location%", "%$get_location%"));
