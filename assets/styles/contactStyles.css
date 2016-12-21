@@ -1,0 +1,165 @@
+/*###For this page only!###*/
+#footer{
+	position: absolute !important;
+	top: 1400px !important;
+}
+/*#########################*/
+
+.borderSplit{
+	margin-top: 30px;
+	width: 400px;
+	border-left: 1.75px solid #63b3d1;
+	margin-right: 55px;
+    overflow: visible;
+}
+
+.smaller{
+	font-size: 14px !important;
+	padding-left: 0px !important;
+}
+
+.contactBody h2{
+	font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+    font-style: italic;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2f9ccf;	
+}
+
+.contactBody h3{
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #63b3d1;
+    margin-top: 5px;
+}
+
+.formContainer{
+	position: relative;
+    display: block;
+    width: 322px;
+}
+
+.contactForm{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.contactForm li{
+    height: 38px;
+    margin-bottom: 27px;
+    margin-top: 16px;
+    padding-top: 0;
+    padding-right: 16px;
+	margin-left: 0!important;
+    list-style: none!important;	
+}
+
+.contactForm input{
+	border-radius: 10px;
+	margin: 0;
+    width: 90%;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #666666;
+    padding-left: 15px;
+    outline: none;
+    background: none;
+}
+
+#contactMessage{
+	height: 215px;
+	border-radius: 10px;
+	margin: 0;
+    width: 90%;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #666666;
+    padding-left: 15px;
+    outline: none;
+    background: none;
+    border-color: initial;
+    border-width: 2px;
+    border-style: inset;
+}
+
+.lookingInfo{
+	padding-left: 50px;
+    padding-top: 32px;	
+}
+
+.lookingInfo h2{
+	line-height: 1.25;
+	margin-top: 0px;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+	font-weight: 400;
+    font-size: 24px;
+    color: #2f9ccf;
+	position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 16px;
+    width: 268px;
+    text-align: center;
+    background: #fbfbfb;
+    border: solid 1px #cbcbcb;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    margin-bottom: 38px;
+    white-space: nowrap;	
+}
+
+.lookingInfo h2 span{
+	font-style: normal;
+    font-size: 20px;
+}
+
+.lookingInfo h2 a{
+	text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+    color: #2f9ccf;
+}
+
+.contactInfo{
+	margin-left: 40px;
+    padding-left: 22px;
+    padding-top: 38px;
+    margin-bottom: 42px;
+    border-top: solid 1px #ecedef;	
+}
+
+.contactInfo strong{
+	font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+    font-weight: 700;
+}
+
+.contactInfo div{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 17px;
+    padding-left: 39px;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #63b3d1;
+}
+
+.email{
+	line-height: 30px;
+}
+
+.email a{
+    color: #63b3d1;
+    text-decoration: underline;
+}

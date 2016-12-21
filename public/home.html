@@ -6,10 +6,10 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/headerStyles.css">
-    <link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
-    <link rel="stylesheet" type="text/css" href="styles/homeStyles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/headerStyles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/footerStyles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/homeStyles.css">
 
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 
@@ -35,12 +35,12 @@
                     </ul>
                 </div>
                 <div id="logo">
-                    <img src="AlegiantLogo.png">
+                    <img src="../assets/images/AlegiantLogo.png">
                 </div>
                 <ul id="mainNavMenu">
                     <a href="http://alegiantservices.com/about/"><li id="aboutBtn" class="menuItem">About</li></a>
                     <a href="http://alegiantservices.com/staffing-solution/"><li id="jobSeekersBtn" class="menuItem">Job Seekers</li></a>
-                    <a href="http://alegiantservices.com/news/"><li id="newsBtn" class="menuItem">News</li></a>
+                   <!--  <a href="http://alegiantservices.com/news/"><li id="newsBtn" class="menuItem">News</li></a> -->
                     <a href="search.html"><li id="jobSearchBtn" class="menuItem">Job Search</li></a>
                     <a href="http://alegiantservices.com/contact/"><li id="contactBtn" class="menuItem">Contact</li></a>
                 </ul>
@@ -193,7 +193,7 @@
         <div id="footerTop">
             <div class="center">
                 <div id="footerLogo">
-                     <img src="AlegiantLogo.png">
+                     <img src="../assets/images/AlegiantLogo.png">
                 </div>
                 <ul id="footerNavMenu">
                     <li id="topBtnFooter" class="menuItem"><a href="">Top</a></li>
@@ -204,7 +204,7 @@
                     <li id="contactBtnFooter" class="menuItem"><a href="">Contact</a></li>
                 </ul>
                 <div id="goldSealFooter">
-                    <img id="goldSeal" src="seal.png">
+                    <img id="goldSeal" src="../assets/images/seal.png">
                 </div>
             </div>
         </div>
@@ -217,7 +217,6 @@
 
 
 <!-- ======================MOBILE==================== -->
-
 <div id="mobile">
     <nav class="container-fluid">
             <ul class="nav navbar-right list-inline socialNav">
@@ -228,7 +227,6 @@
                 <li><a href="">Employee Login</a></li>
             </ul>   
     </nav>
-
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -237,7 +235,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" href="#" id="logo"><img src="AlegiantLogo.png"></a>
+          <a class="navbar-brand" href="#" id="logo"><img src="../assets/images/AlegiantLogo.png"></a>
         </div>
         <div class="collapse navbar-collapse text-center" id="myNavbar">
             <i class="fa fa-caret-down jobSeekDrop navbar-toggle" data-toggle="collapse" data-target="#jobSeekMenu" aria-hidden="true"></i>
@@ -260,10 +258,94 @@
         </div> 
       </div>
     </nav>
+<div id="content">
+            <img id="mainBannerImg" src="../assets/images/alegiant-banner-small.jpg">
+                <div id="registerFormWrapper">
+                    <div id="formWrapper">
+                        <form id="registerForm">
+                            <div id="formHeader">
+                                <h3 id="formTitle">Register</h3>
+                            </div>
+                            <div id="formBody">
+                                <ul id="formFields">
+                                    <li id="nameField" class="formAttr">
+                                        <input type="text" name="nameInput" placeholder="Name">
+                                    </li>
+                                    <li id="emailField" class="formAttr">
+                                        <input type="text" name="emailInput" placeholder="Email">
+                                    </li>
+                                    <li id="locationField" class="formAttr">
+                                        <input type="text" name="emailInput" placeholder="Where do you want to go?">
+                                    </li>
+                                    <li class="formAttr">
+                                        <select id="selectLicense">
+                                            <option value="" selected="selected" class="gf_placeholder">Select a Professional License</option><option value="Certified Nurses’ Aide (CNA)">Certified Nurses’ Aide (CNA)</option><option value="Certified Occupational Therapy Assistant (COTA)">Certified Occupational Therapy Assistant (COTA)</option><option value="CT Technician">CT Technician</option><option value="EEG">EEG</option><option value="Licensed Vocational Nurse/ Licensed Practical Nurse (LVN/LPN)">Licensed Vocational Nurse/ Licensed Practical Nurse (LVN/LPN)</option><option value="Medical Laboratory Technician">Medical Laboratory Technician</option><option value="Nurse Practitioner (N.P.)">Nurse Practitioner (N.P.)</option><option value="Occupational Therapist (OT)">Occupational Therapist (OT)</option><option value="Pharmacist">Pharmacist</option><option value="Phlebotomist">Phlebotomist</option><option value="Physical Therapist (PT)">Physical Therapist (PT)</option><option value="Physical Therapy Assistant (PTA)">Physical Therapy Assistant (PTA)</option><option value="Physician’s Assistant (PA)">Physician’s Assistant (PA)</option><option value="Radiology Technician">Radiology Technician</option><option value="Registered Nurse (RN)">Registered Nurse (RN)</option><option value="Respiratory Therapist (PT)">Respiratory Therapist (PT)</option><option value="Speech Language Pathologist (SLP)">Speech Language Pathologist (SLP)</option><option value="Sterile Processing Technician">Sterile Processing Technician</option><option value="Surgical/ Operating Room Technician">Surgical/ Operating Room Technician</option><option value="Ultrasound Technician">Ultrasound Technician</option>
+                                        </select>
+                                    </li>
+                                    <li class="formAttr">
+                                        <textarea id="textField" placeholder="Comments or questions"></textarea>
+                                    </li>
+                                </ul>
+                                <input type="submit" value="Submit" id="submitForm">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="recentPosts">
+                <div class="center">
+                   <!--  <div id="pin"></div> -->
+                    <h3>HOT JOBS!</h3>
+                    <ul id="jobPosts">
+                            <li id="hot-job0">
+                                <a href=""><h3>Job</h3><h4>Location</h4></a>
+                            </li>
+                            <li id="hot-job1">
+                                <a href=""><h3>Job</h3><h4>Location</h4></a>
+                            </li>
+                            <li id="hot-job2">
+                                <a href=""><h3>Job</h3><h4>Location</h4></a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="companyMission">
+                    
+                <div class="center">
+                    <div class="titleBanner">
+                        <div class="banner">
+                           <h1>Company Mission</h1>
+                        </div>
+                    </div>
+                    <div id="companyMissionContent">
+                        <div id="missionText">
+                            <div id="row1" class="missionRows">
+                                <p><strong>Alegiant is a top provider of healthcare professionals</strong></p>
+                                <p>Alegiant Healthcare has become the go-to medical staffing company for nurses, advanced practice, allied health and IT professionals across the United States. It is our goal to provide top overall opportunities for our travelers, so that they can have the best work/ travel experience.</p>
+                                <p>We pride ourselves on&nbsp;placing our employees at some of the nation’s top healthcare facilities, where they can advance their skills&nbsp;and experience&nbsp;the freedoms and joys&nbsp;of traveling.</p>
+                            </div>
+                            <div id="row2" class="missionRows">
+                                <p>Alegiant was formed in 2003 and set out to build professional relationships with candidates and clients across the country. Clients call us first because of these long term relationships and unique industry insight. Come be a part of our success with connecting you with the best of the best in the healthcare travel world!</p>
+                                <p>Both travel and full-time opportunities are available for healthcare professionals that specialize in therapy, nursing,&nbsp;medical laboratory, imaging, advanced practice and healthcare&nbsp;IT.</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div id="travelSection">
+                <div class="center">
+                    <div class="titleBanner">
+                        <div class="banner">
+                           <h1>  Travel</h1>
+                        </div>
+                    </div>
+                     <div id="missionText">
+                            <div id="row1" class="travelRows">
+                                <p><strong>What can I expect from traveling? </strong>Travel healthcare professionals can expect to be working at the top healthcare facilities across the countr
 
 
 
-<div class="text-center logobkgd" ><img id="footerLogo" src="AlegiantLogo.png"></div>
+<div class="text-center logobkgd" ><img id="footerLogo" src="../assets/images/AlegiantLogo.png"></div>
     <div class="footer center">
         <div id="footerTop">
             <div class="nav nav-pills" id="footerNav">
@@ -277,7 +359,7 @@
                     <li id="contactBtnFooter" class="menuItem"><a href="">Contact</a></li>
                 </ul>
 <!--                 <div id="goldSealFooter">
-                    <img id="goldSeal" src="seal.png">
+                    <img id="goldSeal" src="../assets/images/seal.png">
                 </div> -->
                 <br>
             </div>    
@@ -292,7 +374,7 @@
 
 <!-- instead of post and previous have top 3 suggested jobs -->
 
-<!-- <script type="text/javascript" src="logic/homeLogic.js"></script> -->
+<!-- <script type="text/javascript" src="../logic/homeLogic.js"></script> -->
 <script src="https://use.fontawesome.com/2ce3b4e69a.js"></script>
 <script>
     $.ajax({

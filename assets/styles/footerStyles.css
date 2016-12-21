@@ -14,6 +14,12 @@
 	    height: 60px;
 	}
 
+	#footerLogo img{
+	    width: 141px !important;
+	    height: 40px !important;
+		margin-top: 15px !important;
+	}
+
 
 	#footerBottom{
 	    background-color: #eeeeee;
@@ -45,9 +51,10 @@
 /*==========Mobile Footer Styles==========*/
 
 #goldSeal{
-	width: 60px;
-	height: 60px;
-	margin-top: 7px;
+    width: 55px;
+    height: 55px;
+    margin-top: 7px;
+    margin-left: 65px;
 }
 
 #footerNav {
@@ -80,6 +87,9 @@
 
 
 #footerTop{
+-webkit-box-shadow: inset 0px 2px 5px 0px rgba(209,209,209,1);
+-moz-box-shadow: inset 0px 2px 5px 0px rgba(209,209,209,1);
+box-shadow: inset 0px 2px 5px 0px rgba(209,209,209,1);
 	background-color: #f9f9f9;
 	width: 100%;
 	height: 30px;

@@ -1,0 +1,50 @@
+.mainContent{
+	position: relative;
+	padding-left: 59px;
+}
+
+.mainBody{
+	position: relative;
+    display: block;
+    width: 494px;
+    line-height: 2.7em;
+    margin-bottom: 60px;
+}
+
+.mainBody h2{
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2f9ccf;
+    margin-bottom: 15px;   
+}
+
+.mainBody p{
+	font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.sideContent{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 311px;
+    float: right;
+}
+
+.sideContent h2{
+    border-bottom: solid 1px #ecedef;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "proxima-nova-i4","proxima-nova",sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2f9ccf;
+    margin-bottom: 15px;
+}

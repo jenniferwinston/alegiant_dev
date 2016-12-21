@@ -8,7 +8,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 460px;
-	background: #fff url("../assets/images/alegiant-banner-small.jpg") no-repeat center;
+	background: #fff url("../images/alegiant-banner-small.jpg") no-repeat center;
 }
 
 #registerFormWrapper{
@@ -253,4 +253,186 @@
     margin-right: 50px;
 }
 
+}
+
+
+/*================ MOBILE SSTYLES========*/
+@media only screen and (max-width: 415px) {
+/*====Banner & Register====*/
+#mainBannerImg{
+    position: relative; 
+    width: 120%;
+    height: 200px;
+}
+#registerFormWrapper{
+    padding-top: 20px;
+   align-content: center;
+    display: block;
+   /* left: 75%;*/
+    top: 50px;
+    width: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+}
+ 
+#registerForm{
+    box-sizing: border-box;
+    text-align: left;
+}
+#formTitle{
+    color: #1c5071;
+    margin: 0px 15px;
+    border-bottom: 1px solid #1c5071;
+    font-weight: 700;
+    font-size: 20px;    
+}
+#formBody{
+    padding: 15px;
+}
+#formFields {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#formFields li{
+    margin: 5px 0px 5px 0px;
+    font-family: inherit;
+    letter-spacing: normal;
+    width: 100%;
+}
+.formAttr input{
+    color: #1c5071;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px 4px;
+}
+.formAttr select{
+    color: #1c5071;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px 4px;
+}
+#selectLicense{
+    width: 100%;
+}
+#textField{
+    border-radius: 4px;
+    color: #1c5071;
+    width: 100%;
+    height: 80px;
+    padding: 6px 8px;
+    line-height: 1.5;
+    resize: none;
+}
+#submitForm{
+    background: none;
+}
+/*======Recent Job Posts=======*/
+#recentPosts{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background: #FFF;
+}
+#recentPosts h3{
+    text-align: center;
+    font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #666666; 
+}
+#recentPosts #jobPosts{
+    padding-left: 0px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+}
+#recentPosts #jobPosts>li{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 3px;
+    float: left;
+    width: 100%;
+}
+#recentPosts #jobPosts>li h3{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+    margin: 0px;
+}
+#recentPosts #jobPosts>li h4{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 3px;
+    text-align: center;
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #2f9ccf;
+    margin: 0px;
+}
+/*====Company Mission====*/
+#companyMission{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 14px ;
+}
+#companyMissionContent{
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: -50px;
+}
+#missionText{
+    line-height: 2.5em;
+     align-content: center;
+}
+#missionText .missionRows{
+    display: inline-block;
+    width: 99%;
+    padding-top: 25px;
+}
+#missionText p {
+    font-family: "proxima-nova-n4","proxima-nova",sans-serif;
+    font-style: normal;
+    font-size: .83em;
+    color: #666666;
+    margin-bottom: 20px;
+}
+/*=====Travel Section=====*/
+#travelSection{
+    position: relative;
+    display: block;
+    width: 100%;
+    
+}
+#missionText .travelRows{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+#footerNav ul>li {
+        font-size: 11px;
+    }
 }
